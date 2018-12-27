@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp">
+
+        <ImageView
+            android:id="@+id/iv_video_thumbnail"
+            style="@style/video_thumbnail_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8sp"
+            android:layout_marginStart="8sp">
+
+            <TextView
+                android:id="@+id/tv_video_name"
+                style="@style/video_name_style" />
+
+            <Button
+                android:id="@+id/button_watch_trailer"
+                android:text="@string/watch_video_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/divider_line_style" />
+
+</LinearLayout>

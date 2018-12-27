@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/movie_details_view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray21">
+
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".movie_details.MovieDetailsActivity"
+        android:orientation="horizontal"
+        android:layout_margin="10sp">
+
+        <ImageView
+            android:id="@+id/iv_movie_details_poster"
+            style="@style/poster_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8sp"
+            android:paddingRight="5sp"
+            android:paddingEnd="5sp"
+            android:paddingStart="8sp">
+
+            <TextView
+                android:id="@+id/tv_movie_details_title"
+                style="@style/textview_general_height_width_color"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                style="@style/textview_general_height_width_color"/>
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                style="@style/textview_general_height_width_color"/>
+
+            <Button
+                android:id="@+id/button_favourite_movie"
+                android:background="@color/light_gray"
+                android:textColor="@color/white"
+                android:text="@string/mark_as_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_plot"
+        style="@style/textview_general_height_width_color"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="24sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/white"
+        android:layout_marginRight="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginBottom="16sp"
+        android:alpha="0.2"/>
+
+    <TextView
+        android:text="@string/trailers_section_title"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:textColor="@color/white"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/reviews_section_title"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:textColor="@color/white"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Popular Movies App</string>
+    <string name="error_message">Cannot load movies. Please try again.</string>
+    <string name="no_results">No results found.</string>
+    <string name="popular_movies_menu_item">popular</string>
+    <string name="top_rated_menu_item">top rated</string>
+
+    <string name="prev_button_name">Prev Page</string>
+    <string name="next_button_name">Next Page</string>
+    <string name="reload_button_name">Reload Movies</string>
+
+    <string name="favourite_movies_menu_item">favourites</string>
+    <string name="mark_as_favourite">Like</string>
+    <string name="already_favourite">Liked</string>
+
+    <string name="no_poster">No Poster Available</string>
+    <string name="watch_video_button_text">Watch Video</string>
+
+    <string name="trailers_section_title">Trailers</string>
+    <string name="reviews_section_title">Reviews</string>
+</resources>

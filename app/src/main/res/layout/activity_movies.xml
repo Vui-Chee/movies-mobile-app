@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movie_grid.MoviesActivity"
+    android:background="@color/gray21"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_next_prev_buttons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/b_prev_page"
+            android:text="@string/prev_button_name"
+            style="@style/prev_next_menu_button_style" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01"/>
+
+        <Button
+            android:id="@+id/b_next_page"
+            android:text="@string/next_button_name"
+            style="@style/prev_next_menu_button_style"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_gridview_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_no_results_found"
+            android:text="@string/no_results"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            style="@style/textview_general_height_width_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_error_view"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_error_message_display"
+                android:text="@string/error_message"
+                android:padding="16dp"
+                android:textSize="20sp"
+                style="@style/textview_general_height_width_color" />
+
+            <Button
+                android:id="@+id/reload_button"
+                android:text="@string/reload_button_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

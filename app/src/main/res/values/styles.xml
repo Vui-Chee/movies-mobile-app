@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nearlyDark</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="prev_next_menu_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.45</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#5E5E5E</item>
+    </style>
+
+    <style name="textview_general_height_width_color">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="poster_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:background">#5E5E5E</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:contentDescription">movie poster</item>
+    </style>
+
+    <style name="video_thumbnail_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginLeft">8sp</item>
+    </style>
+
+    <style name="video_name_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">8sp</item>
+        <item name="android:layout_marginRight">8sp</item>
+    </style>
+
+    <style name="divider_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:minHeight">0.25dp</item>
+        <item name="android:layout_marginRight">8sp</item>
+        <item name="android:layout_marginLeft">8sp</item>
+        <item name="android:layout_marginBottom">16sp</item>
+        <item name="android:alpha">0.2</item>
+    </style>
+
+    <style name="review_author_name_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">8sp</item>
+        <item name="android:layout_marginRight">8sp</item>
+        <item name="android:layout_marginBottom">16sp</item>
+    </style>
+
+    <style name="review_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">8sp</item>
+        <item name="android:layout_marginRight">8sp</item>
+        <item name="android:layout_marginBottom">16sp</item>
+    </style>
+
+</resources>
